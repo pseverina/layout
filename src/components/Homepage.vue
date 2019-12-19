@@ -11,7 +11,7 @@
     <div class="solutions">
       <h4 class="solutions__subtitle solutions__subtitle_task-header">Какую задачу вы решаете?</h4>
       <ul class="solutions__task-list">
-        <li class="solutions__task-components">Реклама и продвижение</li>
+        <li class="solutions__task-components solutions__task-components_red">Реклама и продвижение</li>
         <li class="solutions__task-components">Автоматизация процессов</li>
         <li class="solutions__task-components">IT и безопасность</li>
         <li class="solutions__task-components">Работа с клиентской базой</li>
@@ -21,7 +21,7 @@
         <img src="../assets/img/logo.png" class="solutions-card__img"/>
         <h4 class="solutions-card__title">Голосовой <br> робот</h4>
         <p class="solutions-card__text">Облачная платформа голосового робота для совершения автоматических звонков по готовым сценариям</p>
-        <div class="">
+        <div class="soltuions-card__subtext">
           <span class="solutions-card__number">10</span>звонков бесплатно
         </div>
         <b-button class="solutions-card__btn">Подробнее</b-button>

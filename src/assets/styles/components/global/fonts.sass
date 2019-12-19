@@ -1,0 +1,6 @@
+=font($name, $src: $name, $type: otf, $weight: normal)
+  @font-face
+    font-family: $name
+    src: url('#{$src}.#{$type}')
+    font-style: normal
+    font-weight: #{$weight}
