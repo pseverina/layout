@@ -1,5 +1,5 @@
 <template>
-  <div class="footer" style="background-color:yellow">
+  <div class="footer">
     <h5>Бизнес маркет</h5>
     <p>Покупайте бизнес сервисы онлайн, оплатив с мобильного счета вашей организации</p>
     <ul>
