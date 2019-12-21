@@ -24,6 +24,7 @@ body
     font-style: bold
     font-size: 16px
     line-height: 19px
+    width: 288px
 
   &__title
     font-weight: bold
@@ -36,6 +37,7 @@ body
     background: $red
     border-radius: 5px
     border: 1px solid $red
+    width: 220px
 
   &__img
     min-height: 192px
@@ -78,35 +80,57 @@ body
     &_red
       color: $red
   
+.mts
+  &-container
+    display: flex
+    flex-direction: row
+
   &-card
     border: 1px solid $light-grey
     box-sizing: border-box
     border-radius: 8px
-    min-height: 417px
-    min-width: 261px
+    max-height: 417px
+    width: 261px
     padding: 0px 30px
+    display: inline-block
+    margin-left: 8px
 
     &__img
       margin-top: 30px
-      margin-bottom: 17px
+      margin-bottom: 16px
     
     &__title
       color: $black
       font-size: 24px
-      line-height: 32px
-      letter-spacing: -0.5px
       margin-bottom: 20px
+
+      &_push
+        margin-bottom: 51px
     
     &__text
       color: #202D3D
       margin-bottom: 20px
-    
+
+      &_robot
+        margin-bottom: 27px
+
+      &_communicator
+        margin-bottom: 36px
+        width: 216px
+
+      &_assistant
+        margin-bottom: 55px
+
+      &_push
+        margin-bottom: 36px
+
     &__number
-      font-size: 45px
+      margin-bottom: 20px
     
     &__btn
       background-color: #E2E5EB
       border-radius: 5px
+      margin-bottom: 30px
       font-size: 16px
       color: $black
       padding: 6px 32px
@@ -124,9 +148,9 @@ body
     box-sizing: border-box
     border-radius: 10px
     min-width: 288px
-    min-height: 244px
+    height: 100%
     margin-bottom: 20px
-    padding: 25px 20px
+    padding: 0px 20px
 
     &-title
       font-weight: 500
@@ -137,6 +161,7 @@ body
     &-text
       font-size: 16px
       line-height: 24px
+      margin-bottom: 25px
 
     &-img-cloud
       min-width: 55px
@@ -205,8 +230,9 @@ li.shopping-list__img-code
     margin-bottom: 16px
 
   &__btn
+    display: block
     min-width: 220px
     max-height: 36px
     background-color: $red
     border-color: $red
-    margin-bottom: 56px
+    margin: 0 auto 56px

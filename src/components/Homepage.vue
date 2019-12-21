@@ -3,7 +3,7 @@
     <section class="intro-section">
       <div class="intro-section__items">
         <p class="intro-section__text">Покупайте бизнес сервисы онлайн, оплатив с мобильного счета вашей организации</p>
-        <h1 class="intro-section__title">Цифровые решения для вашего бизнеса</h1>
+        <h1 class="intro-section__title">Цифровые<br>решения<br>для вашего<br> бизнеса</h1>
         <b-button class="intro-section__btn">Смотреть все сервисы</b-button>
       </div>
     </section>
@@ -17,38 +17,37 @@
         <li class="solutions__task-components">Работа с клиентской базой</li>
       </ul>
 
-      <div class="solutions-card">
-        <img src="../assets/img/logo.png" class="solutions-card__img"/>
-        <h4 class="solutions-card__title">Голосовой <br> робот</h4>
-        <p class="solutions-card__text">Облачная платформа голосового робота для совершения автоматических звонков по готовым сценариям</p>
-        <div class="soltuions-card__subtext">
-          <span class="solutions-card__number">10</span>звонков бесплатно
+      <div class="mts-container">
+        <div class="mts-card">
+          <img src="../assets/img/logo.png" class="mts-card__img"/>
+          <h4 class="mts-card__title">Голосовой <br> робот</h4>
+          <p class="mts-card__text mts-card__text_robot">Облачная платформа голосового робота для совершения автоматических звонков по готовым сценариям</p>
+          <div class="mts-card__number">
+            <img src="../assets/img/10.png"/>
+            <img src="../assets/img/звонков_бесплатно.png"/>
+          </div>
+          <b-button class="mts-card__btn">Подробнее</b-button>
         </div>
-        <b-button class="solutions-card__btn">Подробнее</b-button>
-      </div>
-      <div class="solutions-card">
-        <img src="../assets/img/logo.png" class="solutions-card__img"/>
-        <h4 class="solutions-card__title">МТС Коммуникатор</h4>
-        <p class="solutions-card__text">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения с клиентами</p>
-        <div><span>10</span>звонков бесплатно
+        <div class="mts-card">
+          <img src="../assets/img/logo.png" class="mts-card__img"/>
+          <h4 class="mts-card__title">МТС Коммуникатор</h4>
+          <p class="mts-card__text mts-card__text_communicator">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения с клиентами</p>
+          <img src="../assets/img/мес.png" class="mts-card__number"/><br>
+          <b-button class="mts-card__btn">Подробнее</b-button>
         </div>
-        <b-button class="solutions-card__btn">Подробнее</b-button>
-      </div>
-      <div class="solutions-card">
-        <img src="../assets/img/logo.png" class="solutions-card__img"/>
-        <h4 class="solutions-card__title">Цифровой ассистент</h4>
-        <p class="solutions-card__text">Наймите электронного сотрудника для общения с клиентами. Готовые решения для корпоративных клиентов МТС</p>
-        <div><span>10</span>звонков бесплатно
+        <div class="mts-card">
+          <img src="../assets/img/logo.png" class="mts-card__img"/>
+          <h4 class="mts-card__title">Цифровой ассистент</h4>
+          <p class="mts-card__text mts-card__text_assistant">Наймите электронного сотрудника для общения с клиентами. Готовые решения для корпоративных клиентов МТС</p>
+          <b-button class="mts-card__btn">Подробнее</b-button>
         </div>
-        <b-button class="solutions-card__btn">Подробнее</b-button>
-      </div>
-      <div class="solutions-card">
-        <img src="../assets/img/logo.png" class="solutions-card__img"/>
-        <h4 class="solutions-card__title">Push for site</h4>
-        <p class="solutions-card__text">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать их в покупателей.</p>
-        <div><span>10</span>звонков бесплатно
+        <div class="mts-card">
+          <img src="../assets/img/push.png" class="mts-card__img"/>
+          <h4 class="mts-card__title mts-card__title_push">Push for site</h4>
+          <p class="mts-card__text mts-card__text_push">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать их в покупателей.</p>
+          <img src='../assets/img/от1592₽.png' class="mts-card__number"/><br>
+          <b-button class="mts-card__btn">Подробнее</b-button>
         </div>
-        <b-button class="solutions-card__btn">Подробнее</b-button>
       </div>
 
       <h4 class="solutions__subtitle solutions__subtitle_popular-service">Популярные сервисы</h4>
