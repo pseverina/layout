@@ -17,38 +17,48 @@
         <li class="solutions__task-components">Работа с клиентской базой</li>
       </ul>
 
-      <div class="mts-container">
-        <div class="mts-card">
-          <img src="../assets/img/logo.png" class="mts-card__img"/>
-          <h4 class="mts-card__title">Голосовой <br> робот</h4>
-          <p class="mts-card__text mts-card__text_robot">Облачная платформа голосового робота для совершения автоматических звонков по готовым сценариям</p>
-          <div class="mts-card__number">
-            <img src="../assets/img/10.png"/>
-            <img src="../assets/img/звонков_бесплатно.png"/>
+      <flickity ref="flickity" :options="flickityOptions">
+          <div class="carousel-cell mts-card">
+            <img src="../assets/img/logo.png" class="mts-card__img"/>
+            <h4 class="mts-card__title">Голосовой<br>робот</h4>
+            <p class="mts-card__text mts-card__text_robot">Облачная платформа голосового робота для совершения автоматических звонков по готовым сценариям</p>
+            <div class="mts-card__number">
+              <img src="../assets/img/10.png"/>
+              <img src="../assets/img/звонков_бесплатно.png"/>
+            </div>
+            <b-button class="mts-card__btn">Подробнее</b-button>
           </div>
-          <b-button class="mts-card__btn">Подробнее</b-button>
-        </div>
-        <div class="mts-card">
-          <img src="../assets/img/logo.png" class="mts-card__img"/>
-          <h4 class="mts-card__title">МТС Коммуникатор</h4>
-          <p class="mts-card__text mts-card__text_communicator">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения с клиентами</p>
-          <img src="../assets/img/мес.png" class="mts-card__number"/><br>
-          <b-button class="mts-card__btn">Подробнее</b-button>
-        </div>
-        <div class="mts-card">
-          <img src="../assets/img/logo.png" class="mts-card__img"/>
-          <h4 class="mts-card__title">Цифровой ассистент</h4>
-          <p class="mts-card__text mts-card__text_assistant">Наймите электронного сотрудника для общения с клиентами. Готовые решения для корпоративных клиентов МТС</p>
-          <b-button class="mts-card__btn">Подробнее</b-button>
-        </div>
-        <div class="mts-card">
-          <img src="../assets/img/push.png" class="mts-card__img"/>
-          <h4 class="mts-card__title mts-card__title_push">Push for site</h4>
-          <p class="mts-card__text mts-card__text_push">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать их в покупателей.</p>
-          <img src='../assets/img/от1592₽.png' class="mts-card__number"/><br>
-          <b-button class="mts-card__btn">Подробнее</b-button>
-        </div>
-      </div>
+          <div class="carousel-cell mts-card">
+            <img src="../assets/img/logo.png" class="mts-card__img"/>
+            <h4 class="mts-card__title">Голосовой<br>робот</h4>
+            <p class="mts-card__text mts-card__text_robot">Облачная платформа голосового робота для совершения автоматических звонков по готовым сценариям</p>
+            <div class="mts-card__number">
+              <img src="../assets/img/10.png"/>
+              <img src="../assets/img/звонков_бесплатно.png"/>
+            </div>
+            <b-button class="mts-card__btn">Подробнее</b-button>
+          </div>
+          <div class="carousel-cell mts-card">
+            <img src="../assets/img/logo.png" class="mts-card__img"/>
+            <h4 class="mts-card__title">МТС Коммуникатор</h4>
+            <p class="mts-card__text mts-card__text_communicator">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения с клиентами</p>
+            <img src="../assets/img/мес.png" class="mts-card__number"/><br>
+            <b-button class="mts-card__btn">Подробнее</b-button>
+          </div>
+          <div class="carousel-cell mts-card">
+            <img src="../assets/img/logo.png" class="mts-card__img"/>
+            <h4 class="mts-card__title">Цифровой ассистент</h4>
+            <p class="mts-card__text mts-card__text_assistant">Наймите электронного сотрудника для общения с клиентами. Готовые решения для корпоративных клиентов МТС</p>
+            <b-button class="mts-card__btn">Подробнее</b-button>
+          </div>
+          <div class="carousel-cell mts-card">
+            <img src="../assets/img/push.png" class="mts-card__img"/>
+            <h4 class="mts-card__title mts-card__title_push">Push for site</h4>
+            <p class="mts-card__text mts-card__text_push">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать их в покупателей.</p>
+            <img src='../assets/img/от1592₽.png' class="mts-card__number"/><br>
+            <b-button class="mts-card__btn">Подробнее</b-button>
+          </div>
+      </flickity>
 
       <h4 class="solutions__subtitle solutions__subtitle_popular-service">Популярные сервисы</h4>
       <div class="services">
@@ -84,12 +94,26 @@
       </ul>
       <b-button class="shopping-list__btn">Смотреть все сервисы</b-button>
     </div>
-
   </div>
 </template>
 
 <script>
+import Flickity from 'vue-flickity'
+
 export default {
-  name: 'Homepage'
+  name: 'Homepage',
+  components: {
+    Flickity
+  },
+  data () {
+    return {
+      flickityOptions: {
+        initialIndex: 1,
+        freeScroll: true,
+        prevNextButtons: false,
+        pageDots: false
+      }
+    }
+  }
 }
 </script>
