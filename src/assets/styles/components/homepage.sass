@@ -13,18 +13,32 @@ body
   min-height: 537px
   display: flex
   flex: column
+
+  +media(l)
+    background: url('./assets/img/hero_banner.png') no-repeat 95% 100%
+    background-size: 474px 419px
+    background-color: #F2F3F7
+    min-height: 450px
   
   &__items
     padding: 0 16px
+
+    +media(l)
+      padding: 0 84px
   
   &__text
     color: $black
     padding-top: 30px
     margin-bottom: 10px
-    font-style: bold
+    font-weight: 500
     font-size: 16px
-    line-height: 19px
     width: 288px
+
+    +media(l)
+      width: 580px
+      font-size: 24px
+      padding-top: 70px
+      margin-bottom: 20px
 
   &__title
     font-weight: bold
@@ -32,24 +46,33 @@ body
     font-size: 32px
     line-height: 40px
     margin-bottom: 20px
+    width: 237px
+
+    +media(l)
+      width: 378px
+      margin-bottom: 60px
   
   &__btn
     background: $red
     border-radius: 5px
     border: 1px solid $red
     width: 220px
+
+    +media(l)
+      width: 284px
+      height: 48px
+      font-size: 21px
   
   &__btn:hover
     background-color: $red
     border-color: $red
-
-  &__img
-    min-height: 192px
-    max-width: 155px
     
 .solutions 
   background-color: #FFFFFF
   padding: 0 16px
+
+  +media(l)
+    padding: 0 84px
 
   &__subtitle
     font-size: 24px
@@ -57,8 +80,16 @@ body
     color: $black
     font-weight: bold
 
+    +media(l)
+      font-size: 32px
+      text-align: center
+      margin-top: 100px
+
     &_task-header
       margin: 44px 0 30px
+
+      +media(l)
+        margin-top: 100px
     
     &_popular-service
       margin: 116px 0 30px
@@ -66,10 +97,18 @@ body
     &_shopping
       margin-bottom: 30px
 
+      +media(l)
+        max-width: 435px
+        margin-left: auto
+        margin-right: auto
+
   &__task-list
     list-style-type: none
     padding: 0
     margin: 0 0 30px 0
+
+    +media(l)
+      text-align: center
   
   &__task-components
     text-align: center
@@ -83,6 +122,11 @@ body
     
     &_red
       color: $red
+    
+    +media(l)
+      display: inline
+      min-width: 233px
+      margin: 0 6px
   
   &__task-components:hover
     background-color: $red
@@ -142,13 +186,23 @@ body
       min-width: 211px
       min-height: 36px
     
+    &__btn:hover
+      background-color: $red
+      border: 1px solid $red
+    
   &-card:hover
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08)
 
 .services
   display: flex
   flex-direction: column
-  margin-bottom: 60px
+
+  +media(l)
+    flex-direction: row
+  
+  &_first-row
+    +media(l)
+      margin-bottom: 32px
 
   &__card
     border: 1px solid #E8E8E8
@@ -158,6 +212,12 @@ body
     height: 100%
     margin-bottom: 20px
     padding: 0px 20px
+
+    +media(l)
+      width: 584px
+      height: 170px
+      padding: 25px 30px
+      margin: 0 16px
 
     &-title
       font-weight: 500
@@ -170,25 +230,56 @@ body
       line-height: 24px
       margin-bottom: 25px
 
+      +media(l)
+        width: 288px
+
     &-img-cloud
       min-width: 55px
       min-height: 53px
       margin: 29px 0 24px
-    
+
+      +media(l)
+        display: none
+
     &-img-phone
       min-width: 57px
       min-height: 56px
       margin: 28px 0 22px
+
+      +media(l)
+        display: none
     
     &-img-cloudmts
       min-width: 56px
       min-height: 39px
       margin: 32px 0 27px
+
+      +media(l)
+        display: none
     
     &-img-worker
       min-width: 42px
       min-height: 44px
       margin: 28px 0 33px
+
+      +media(l)
+        display: none
+
+    &_cloud
+      +media(l)
+         background: url('./assets/img/text_cloud.png') no-repeat 90% 50%
+    
+    &_phone
+      +media(l)
+        background: url('./assets/img/phone.png') no-repeat 90% 50%
+
+    &_cloudmts
+      +media(l)
+        background: url('./assets/img/cloud.png') no-repeat 90% 50%
+      
+    &_worker
+      +media(l)
+        background: url('./assets/img/worker.png') no-repeat 90% 50%
 
   &__card:hover
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08)
@@ -223,31 +314,47 @@ li.shopping-list__img-code
   padding-left: 30px
   display: block
 
-.shopping-list
-  &__img-bag
-    margin-bottom: 16px
+.shopping
+  &-container
+    +media(l)
+      background: url('./assets/img/block_3_man.png') no-repeat right 55%
+      background-size: 422px 339px 
 
-  &__img-money
-    margin-bottom: 16px
+  &-list
+    +media(l)
+      width: 583px 
 
-  &__img-ticket
-    margin-bottom: 16px
+    &__img-bag
+      margin-bottom: 16px
 
-  &__img-tv
-    margin-bottom: 16px
+    &__img-money
+      margin-bottom: 16px
 
-  &__img-code
-    margin-bottom: 16px
+    &__img-ticket
+      margin-bottom: 16px
 
-  &__btn
-    display: block
-    min-width: 220px
-    max-height: 36px
-    background-color: $red
-    border-color: $red
-    margin: 0 auto 56px
-  
-  &__btn:hover
-    background-color: $red
-    border-color: $red
+    &__img-tv
+      margin-bottom: 16px
+
+    &__img-code
+      margin-bottom: 16px
+
+    &__btn
+      display: block
+      min-width: 220px
+      max-height: 36px
+      background-color: $red
+      border-color: $red
+      margin: 0 auto 56px
+
+      +media(l)
+        margin: 41px 0 135px 25px
+        font-size: 20px
+        min-width: 299px
+        max-height: 48px
+    
+    &__btn:hover
+      background-color: $red
+      border-color: $red
+	 
   

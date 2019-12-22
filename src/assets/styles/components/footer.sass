@@ -3,10 +3,17 @@ $white: #FFFFFF
 .footer
   min-height: 476px
 
+  +media(l)
+      background-color: #ADB0B3
+
   &-container
     background-color: #ADB0B3
     padding: 0 16px
     color: $white
+
+    +media(l)
+      height: 393px
+      padding: 56px 85px
 
   &__title
     padding: 24px 0 20px
@@ -19,17 +26,37 @@ $white: #FFFFFF
     font-size: 14px
     line-height: 20px
 
+    +media(l)
+      width: 173px
+
   &__list
     list-style-type: none
     padding: 0
     margin: 0
+    display: flex
+    justify-content: center
 
     &-components
       height: 56px
       font-size: 16px
       line-height: 24px
       background: url('./assets/img/drop_down.png') no-repeat right 0
-      display: block
+      display: inline-block
+
+      +media(l)
+        background: none
+        font-weight: 500
+        font-size: 12px
+        padding-bottom: 24px
+  
+  &__nest-list
+    list-style-type: none
+    padding: 0
+    margin: 0
+    
+    &-components
+      font-size: 12px
+      padding-bottom: 16px
 
   &__rights
     color: #6E7782
@@ -37,5 +64,8 @@ $white: #FFFFFF
     text-align: center
     font-size: 12px
     margin: 9px auto
+
+    +media(l)
+      background-color: #ADB0B3
 
     

@@ -1,8 +1,8 @@
-$breakpoints: ('xs': 480px, 's': 767px, 'm': 990px, 'l': 1200px, 'xl': 1600px)
+$breakpoints: ('xs': 320px, 's': 768px, 'm': 990px, 'l': 1024px, 'xl': 1368px)
 
 =media($breakpoint)
   @if map-has-key($breakpoints, $breakpoint)
-    @media (max-width: map-get($breakpoints, $breakpoint))
+    @media (min-width: map-get($breakpoints, $breakpoint))
       @content
 
   @else
