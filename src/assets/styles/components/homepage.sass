@@ -2,6 +2,7 @@ $black: #001424
 $red: #DD0000
 $grey: #6E7782
 $light-grey: #E2E5EB
+$background-grey: #F2F3F7
 
 body
   font: 'MTS Sans'
@@ -9,7 +10,7 @@ body
 .intro-section
   background: url('./assets/img/hero_banner.png') no-repeat 50% 100%
   background-size: 229px 203px
-  background-color: #F2F3F7
+  background-color: $background-grey
   min-height: 537px
   display: flex
   flex: column
@@ -17,7 +18,7 @@ body
   +media(l)
     background: url('./assets/img/hero_banner.png') no-repeat 95% 100%
     background-size: 474px 419px
-    background-color: #F2F3F7
+    background-color: $background-grey
     min-height: 450px
   
   &__items
@@ -66,6 +67,14 @@ body
   &__btn:hover
     background-color: $red
     border-color: $red
+  
+  &__btn:active
+    background-color: $red
+    border-color: $red
+
+  &__btn:focus
+    background-color: $red
+    border-color: $red
     
 .solutions 
   background-color: #FFFFFF
@@ -87,17 +96,21 @@ body
 
     &_task-header
       margin: 44px 0 30px
+      max-width: 200px
 
       +media(l)
+        max-width: 100%
         margin-top: 100px
     
     &_popular-service
       margin: 116px 0 30px
     
     &_shopping
+      margin-top: 30px
       margin-bottom: 30px
 
       +media(l)
+        margin-top: 100px
         max-width: 435px
         margin-left: auto
         margin-right: auto
@@ -176,13 +189,13 @@ body
       margin-bottom: 20px
     
     &__btn
-      background-color: #E2E5EB
+      background-color: $light-grey
       border-radius: 5px
       margin-bottom: 30px
       font-size: 16px
       color: $black
       padding: 6px 32px
-      border: 1px solid #E2E5EB
+      border: 1px solid $light-grey
       min-width: 211px
       min-height: 36px
     
@@ -357,4 +370,3 @@ li.shopping-list__img-code
       background-color: $red
       border-color: $red
 	 
-  

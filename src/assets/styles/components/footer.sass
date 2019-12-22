@@ -1,16 +1,25 @@
 $white: #FFFFFF
+$footer-grey:  #ADB0B3
+$red: #DD0000
 
 .bold
-  font-weight: 500
+  +media(l)
+    font-weight: bold
+
+.hidden
+  display: none
+
+  +media(l)
+    display: inline
 
 .footer
   min-height: 476px
 
   +media(l)
-    background-color: #ADB0B3
+    background-color: $footer-grey
 
   &-container
-    background-color: #ADB0B3
+    background-color: $footer-grey
     padding: 0 16px
     color: $white
 
@@ -23,6 +32,9 @@ $white: #FFFFFF
     font-weight: bold
     font-size: 20px
     line-height: 24px
+
+    +media(l)
+      display: none
   
   &__subtitle
     padding-bottom: 32px
@@ -30,37 +42,61 @@ $white: #FFFFFF
     line-height: 20px
 
     +media(l)
-      width: 173px
+      display: none
 
   &__list
     list-style-type: none
     padding: 0
     margin: 0
-    display: flex
-    justify-content: center
+
+    +media(l)
+      display: flex
+      justify-content: center
+
+    &-text
+      display: none
+
+      +media(l)
+        display: block
+        width: 172px
+        font-size: 14
+        list-style-type: none
+        padding: 0
+        margin: 0
 
     &-components
       height: 56px
       font-size: 16px
       line-height: 24px
       background: url('./assets/img/drop_down.png') no-repeat right 0
-      display: inline-block
 
       +media(l)
         background: none
-        font-weight: 500
         font-size: 12px
         padding-bottom: 24px
+        display: inline-block
+        padding-right: 16px
+
+      &_business
+        margin-right: 10px
   
   &__nest-list
+    display: none
     list-style-type: none
     padding: 0
     margin: 0
+
+    +media(l)
+      display: block
     
     &-components
-      font-size: 8px
-      padding-bottom: 16px
-      display: inline-block
+      display: none
+
+      +media(l)
+        display: block
+        font-size: 12px
+        padding-bottom: 16px
+        padding-right: 16px
 
       &_first-row-components
         padding-top: 24px
@@ -76,4 +112,8 @@ $white: #FFFFFF
     margin: 9px auto
 
     +media(l)
-      background-color: #ADB0B3
+      background-color: $footer-grey
+      padding: 41px 84px 0
+      color: $white
+      float: left
+
