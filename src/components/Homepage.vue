@@ -62,14 +62,14 @@
 
       <h4 class="solutions__subtitle solutions__subtitle_popular-service">Популярные сервисы</h4>
       <b-row class="justify-content-lg-center">
-        <b-col lg="4" class="services services_first-row">
+        <b-col lg="6" xl="5" class="services services_first-row">
           <div class="services__card services__card_cloud">
             <img src="../assets/img/text_cloud.png" class="services__card-img-cloud"/>
             <div class="services__card-title">МТС Маркетолог</div>
             <p class="services__card-text">Используйте различные каналы коммуникации: SMS, ,E-mail, Viber, Баннеры, Социальные сети</p>
           </div>
         </b-col>
-        <b-col lg="4" class="services  services_first-row">
+        <b-col lg="6" xl="5" class="services  services_first-row">
           <div class="services__card services__card_phone">
             <img src="../assets/img/phone.png" class="services__card-img-phone"/>
             <div class="services__card-title">Бесплатный вызов 8800</div>
@@ -78,14 +78,14 @@
         </b-col>
         </b-row>
       <b-row class="justify-content-lg-center">
-        <b-col lg="4" class="services">
+        <b-col lg="6" xl="5" class="services">
           <div class="services__card services__card_cloudmts">
             <img src="../assets/img/cloud.png" class="services__card-img-cloudmts"/>
             <div class="services__card-title">#CloudMTS</div>
             <p class="services__card-text">Экосистема облачных сервисов для крупного бизнеса и корпораций</p>
           </div>
         </b-col>
-        <b-col lg="4" class="services">
+        <b-col lg="6" xl="5" class="services">
           <div class="services__card services__card_worker">
             <img src="../assets/img/worker.png" class="services__card-img-worker"/>
             <div class="services__card-title">Виртуальная АТС</div>
