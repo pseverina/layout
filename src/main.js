@@ -4,8 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import BootstrapVue from 'bootstrap-vue'
+import VueScrollTo from 'vue-scroll-to'
 
-Vue.use(BootstrapVue)
+Vue
+  .use(BootstrapVue)
+  .use(VueScrollTo, {
+    speed: 400,
+    padding: 60,
+    movingFrequency: 5
+  })
 
 Vue.config.productionTip = false
 
