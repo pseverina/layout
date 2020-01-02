@@ -1,7 +1,7 @@
 # layout_mts
 
-> A Vue.js project
-
+> A simple vue.js project
+> Верстка макета (mobile first) с адаптацией под Ipad и Desktop. Тех стек: html, sass и vue js
 ## Build Setup
 
 ``` bash
