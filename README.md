@@ -1,7 +1,6 @@
 # layout_mts
 
-> A Vue.js project
-
+> Simple vue.js project
 ## Build Setup
 
 ``` bash
